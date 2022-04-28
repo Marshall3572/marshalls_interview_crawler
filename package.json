@@ -1,8 +1,11 @@
 {
-  "name": "spider",
+  "name": "marshalls_interview_crawler",
   "version": "1.0.0",
   "description": "大厂面经爬虫",
   "main": "index.js",
+  "bin": {
+    "crawler": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,5 +13,11 @@
     "爬虫"
   ],
   "author": "liushihao",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "enquirer": "^2.3.6",
+    "node-fetch": "^2.6.7",
+    "open": "^8.4.0",
+    "serve-handler": "^6.1.3"
+  }
 }
