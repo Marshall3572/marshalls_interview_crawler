@@ -1,7 +1,7 @@
 {
   "name": "marshalls_interview_crawler",
-  "version": "1.0.0",
-  "description": "大厂面经爬虫",
+  "version": "1.0.1",
+  "description": "下载牛客网程序员大厂面试面经，仅供个人学术研究使用",
   "main": "index.js",
   "bin": {
     "crawler": "./index.js"
