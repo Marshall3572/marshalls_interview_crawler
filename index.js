@@ -20,18 +20,18 @@ async function start() {
     Object.assign(result, response)
 
     response = await prompt({
-        type: 'select',
+        type: 'input',
         name: 'job',
         message: '请输入你感兴趣的岗位方向',
-        choices: ['前端', 'Java', '后端', '测试', '产品经理', 'UI']
+        // choices: ['前端', 'Java', '后端', '测试', '产品经理', 'UI']
     })
     Object.assign(result, response)
 
     response = await prompt({
-        type: 'select',
+        type: 'input',
         name: 'company',
         message: '请输入你感兴趣的公司',
-        choices: ['阿里巴巴', '字节跳动', '腾讯', '拼多多', '百度', '华为']
+        // choices: ['阿里巴巴', '字节跳动', '腾讯', '拼多多', '百度', '华为']
     })
     Object.assign(result, response)
     console.log(result)
@@ -57,7 +57,7 @@ async function start() {
             })
             console.log(`已推荐${++count}篇`)
             if (count >= result.count) break
-            await new Promise(res => setTimeout(res, 100))
+            await new Promise(res => setTimeout(res, 10))
         }
         page++
     } while (count < result.count && urls.length > 0)
